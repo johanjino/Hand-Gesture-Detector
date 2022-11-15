@@ -1,12 +1,11 @@
+#import functions to the namespace of the entire module
 
-import pickle
-import numpy as np
-import tensorflow as tf
-from tensorflow import keras
-from scipy.spatial import distance
+from .data_trainer import normalise_data
+from .data_trainer import savedata
+from .data_trainer import createmodel
+from .data_trainer import findmodel
 
-
-
+'''
 class Callback(keras.callbacks.Callback):
   def on_epoch_end(self, epoch, logs={}):
     if(logs.get('accuracy')>0.95):
@@ -144,3 +143,4 @@ def createmodel(file):
     model.save("created_model")
     print("Model successfull")
     return model
+'''
